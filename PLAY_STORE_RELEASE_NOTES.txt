@@ -1,0 +1,138 @@
+========================================
+GOOGLE PLAY STORE - SHORT DESCRIPTION
+(Max 80 characters)
+========================================
+
+Customizable RSS reader with market tracking in a mosaic tile layout
+
+
+========================================
+GOOGLE PLAY STORE - FULL DESCRIPTION
+(Max 4000 characters)
+========================================
+
+📰 Mosaic RSS Reader - Your News, Your Way
+
+Tired of cluttered news apps? Mosaic RSS Reader brings a fresh approach to staying informed. Organize your favorite news sources, blogs, and market data in a beautiful, customizable mosaic tile layout.
+
+✨ KEY FEATURES
+
+RSS Feed Management
+• Add unlimited RSS and Atom feeds
+• Auto-refresh to get the latest content
+• Clean, distraction-free reading
+• One-tap to open articles in browser
+
+Market Data Tracking
+• Track stocks, indices, and crypto
+• Pre-configured watchlists (S&P 500, Nasdaq, Dow Jones, etc.)
+• Real-time price quotes and changes
+• Mix market data with news feeds
+
+Beautiful Mosaic Interface
+• Arrange tiles your way
+• Responsive design for any screen size
+• Touch-optimized for mobile
+• Smooth scrolling experience
+
+Personalization
+• Customizable themes and colors
+• Control refresh intervals (5-60 min)
+• Your layout saves automatically
+• Fast, local data storage
+
+🚀 WHY MOSAIC RSS?
+
+Unlike traditional RSS readers, Mosaic lets you combine news feeds and market data in one unified view. Perfect for investors, traders, and news enthusiasts who want everything in one place.
+
+📱 MODERN & FAST
+
+Built with cutting-edge technology (Rust + React) for native performance. Efficient memory usage and smart caching mean fast startup times and smooth operation.
+
+🛡️ PRIVACY FOCUSED
+
+• No tracking or analytics
+• Your data stays on your device
+• No account required
+• Open source friendly
+
+🎯 PERFECT FOR
+
+• News junkies who follow multiple sources
+• Investors tracking markets and financial news
+• Professionals monitoring industry updates
+• Anyone who loves RSS feeds
+
+⚡ QUICK START
+
+1. Tap "Manage Feeds" to add your favorite RSS feeds
+2. Tap "Market Watch" to track stocks and indices
+3. Customize your layout and enjoy!
+
+Popular feeds to try:
+• NY Times, The Guardian, BBC News
+• TechCrunch, The Verge, Hacker News
+• Yahoo Finance, MarketWatch
+
+🔧 TECHNICAL SPECS
+
+• Android 7.0+ required
+• ~40MB storage
+• Internet connection needed
+• Supports RSS 2.0 and Atom feeds
+
+💬 FEEDBACK WELCOME
+
+This is our initial release! We're actively developing new features and would love your feedback. Found a bug? Have a feature request? Let us know!
+
+🔜 COMING SOON
+
+• Push notifications for breaking news
+• Offline reading mode
+• Article bookmarking
+• Dark mode
+• Home screen widgets
+• Share articles
+
+Download Mosaic RSS Reader today and experience a better way to stay informed!
+
+
+========================================
+RELEASE NOTES FOR GOOGLE PLAY
+(Max 500 characters per language)
+========================================
+
+🎉 Welcome to Mosaic RSS Reader v2.0.0!
+
+✨ What's New:
+• Initial release of Mosaic RSS Reader
+• RSS feed management with auto-refresh
+• Real-time market data tracking
+• Customizable mosaic tile layout
+• Mobile-optimized interface
+• Theme customization
+• Fast & stable performance
+
+📰 Mix news feeds and market data in one beautiful interface!
+
+Add your favorite RSS feeds and start tracking what matters to you.
+
+Thank you for being an early user! Please share your feedback.
+
+
+========================================
+WHAT'S NEW (UPDATE FORMAT)
+For future updates - Max 500 chars
+========================================
+
+v2.0.0 - Initial Release
+• RSS feed reader with unlimited sources
+• Market data tracking (stocks, indices, crypto)
+• Customizable mosaic tile interface
+• Auto-refresh feeds
+• Theme personalization
+• Fast native performance
+• Offline data caching
+• Error handling & stability improvements
+
+Add your favorite news sources and market watchlists today!

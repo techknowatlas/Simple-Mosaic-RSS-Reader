@@ -1,0 +1,114 @@
+.theme-settings-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.theme-settings {
+  background-color: white;
+  border: 3px solid var(--border-color);
+  border-radius: 12px;
+  width: 90%;
+  max-width: 700px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 40px rgba(251, 191, 36, 0.3), 0 0 60px rgba(251, 191, 36, 0.2);
+}
+
+.theme-settings-header {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.theme-settings-header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.theme-settings-content {
+  padding: 24px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.theme-description {
+  color: var(--secondary-color);
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.theme-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+.theme-card {
+  background: white;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.theme-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(251, 191, 36, 0.4), 0 0 30px rgba(251, 191, 36, 0.2);
+  border-color: var(--border-light);
+}
+
+.theme-card.active {
+  border-color: var(--primary-color);
+  border-width: 3px;
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.4), 0 0 30px rgba(16, 185, 129, 0.2);
+}
+
+.theme-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.theme-preview-primary {
+  height: 60px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.theme-preview-tile {
+  height: 50px;
+  border: 2px solid;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.theme-preview-tile-header {
+  height: 20px;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.theme-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-color);
+}

@@ -1,0 +1,233 @@
+:root {
+  --primary-color: #10b981; /* Emerald green */
+  --primary-light: #6ee7b7; /* Seafoam green */
+  --primary-dark: #059669; /* Dark emerald */
+  --secondary-color: #64748b;
+  --danger-color: #ef4444;
+  --bg-color: #f0fdf4; /* Very light green tint */
+  --text-color: #1e293b;
+  --border-color: #fbbf24; /* Shiny gold */
+  --border-light: #fcd34d; /* Light gold */
+  --border-dark: #f59e0b; /* Dark gold */
+  --header-height: 60px;
+  --gradient-primary: linear-gradient(135deg, #6ee7b7 0%, #10b981 100%);
+  --gradient-subtle: linear-gradient(135deg, #f0fdf4 0%, #d1fae5 100%);
+  --gradient-gold: linear-gradient(135deg, #fcd34d 0%, #f59e0b 100%);
+  --tile-color: #ffffff;
+  --tile-header-color: linear-gradient(135deg, #f0fdf4 0%, #d1fae5 100%);
+  --item-color: #f0fdf4;
+  --item-hover-color: #d1fae5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.app-header {
+  min-height: var(--header-height);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--gradient-primary);
+  border-bottom: 3px solid var(--border-color);
+  box-shadow: 0 2px 8px rgba(251, 191, 36, 0.3);
+  pointer-events: auto;
+  touch-action: manipulation;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.app-header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Foldable cover display (narrow phone) */
+@media (max-width: 480px) {
+  .app-header h1 {
+    font-size: 16px;
+  }
+  
+  .header-buttons {
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .btn-primary {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .app-header {
+    padding: 12px 8px;
+    min-height: 100px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .app-header h1 {
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .app-main {
+    padding: 12px;
+  }
+
+  .header-buttons {
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+/* Unfolded tablet mode (Pixel 10 Fold inner display) */
+@media (min-width: 1500px) {
+  .app-header {
+    padding: 16px 32px;
+  }
+  
+  .app-header h1 {
+    font-size: 32px;
+  }
+  
+  .app-main {
+    padding: 32px;
+  }
+  
+  .header-buttons {
+    gap: 16px;
+  }
+}
+
+.header-buttons {
+  display: flex;
+  gap: 12px;
+  pointer-events: auto;
+  touch-action: manipulation;
+  z-index: 10;
+  flex-wrap: wrap;
+}
+
+.app-main {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.empty-state h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.empty-state p {
+  font-size: 16px;
+}
+
+/* Button styles */
+.btn-primary,
+.btn-secondary,
+.btn-danger {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 44px;
+  touch-action: manipulation;
+  pointer-events: auto;
+  -webkit-tap-highlight-color: rgba(16, 185, 129, 0.3);
+}
+
+@media (max-width: 768px) {
+  .btn-primary,
+  .btn-secondary,
+  .btn-danger {
+    padding: 12px 16px;
+    font-size: 14px;
+    min-height: 44px;
+    flex: 1;
+    min-width: 120px;
+  }
+}
+
+.btn-primary {
+  background: var(--gradient-primary);
+  color: white;
+  border: none;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+  transform: translateY(-1px);
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.btn-danger {
+  background-color: var(--danger-color);
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.btn-small {
+  padding: 6px 12px;
+  font-size: 12px;
+}
